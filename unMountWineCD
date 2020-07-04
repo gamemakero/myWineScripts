@@ -1,0 +1,4 @@
+#!/bin/bash
+rm $HOME/.wine/dosdevices/d::
+sudo umount /media/wincd
+sudo rmdir /media/wincd

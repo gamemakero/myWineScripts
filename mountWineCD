@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -z "$1" ]
+  then
+    echo "No iso to mount supplied"
+fi
+sudo mkdir /media/wincd
+sudo mount -o loop -t iso9660 $1 /media/wincd
+sudo ln -s $1 $HOME/.wine/dosdevices/d::
+
